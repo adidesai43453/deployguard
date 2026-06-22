@@ -1,37 +1,57 @@
-# DeployGuard
+# 🚀 DeployGuard
 
 ![DeployGuard Demo](docs/deployguard-demo.gif)
 
-## Deployment Readiness Analyzer
+## Deployment Readiness Analyzer for Modern Applications
 
-DeployGuard analyzes repositories before deployment and generates deployment readiness scores, CI/CD recommendations, Docker validation checks, and environment configuration assessments.
+DeployGuard is a full-stack DevOps platform that analyzes application repositories and evaluates their deployment readiness before production deployment.
 
-### Features
+The platform scans uploaded repositories, validates deployment configurations, inspects project structure, and generates actionable DevOps recommendations along with an overall readiness score.
 
-- ZIP Repository Upload
-- Deployment Readiness Scoring
-- Dockerfile Detection
-- GitHub Actions Detection
-- Package.json Analysis
-- Environment Variable Validation
-- DevOps Recommendations
-- JSON Report Export
+### 🌐 Live Demo
 
-### Tech Stack
+**Frontend:**
+https://deployguard-git-main-aditya-desai-s-projects.vercel.app
 
-Frontend:
-- React
-- Tailwind CSS
-- Framer Motion
-- Axios
+**Backend API:**
+https://deployguard-api.onrender.com
 
-Backend:
-- Node.js
-- Express
-- Multer
-- Adm-Zip
+---
 
-### Workflow
+## ✨ Features
+
+### Repository Analysis
+
+* Upload ZIP repositories directly from the browser
+* Automatic repository extraction and scanning
+* Project structure validation
+
+### Deployment Readiness Checks
+
+* Dockerfile detection
+* GitHub Actions workflow detection
+* Package.json validation
+* Environment variable template analysis
+* Deployment readiness scoring
+
+### Reporting & Insights
+
+* Deployment readiness score
+* Deployment grade (A-F)
+* Missing file detection
+* DevOps recommendations
+* JSON report export
+
+### Modern User Experience
+
+* Interactive dashboard
+* Real-time scan results
+* Responsive UI
+* Professional DevOps-focused design
+
+---
+
+## 🏗️ System Architecture
 
 Repository Upload
 
@@ -41,17 +61,65 @@ Repository Extraction
 
 ↓
 
-Deployment Analysis
+Project Analysis Engine
 
 ↓
 
-Readiness Score Generation
+Scoring Engine
+
+↓
+
+Deployment Readiness Report
 
 ↓
 
 Recommendations Dashboard
 
-## Example Report
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+* Framer Motion
+* Axios
+* Vite
+
+### Backend
+
+* Node.js
+* Express.js
+* Multer
+* Adm-Zip
+
+### Deployment
+
+* Vercel
+* Render
+* GitHub
+
+---
+
+## 📊 Current Analysis Capabilities
+
+DeployGuard currently validates:
+
+| Check                           | Status |
+| ------------------------------- | ------ |
+| README Detection                | ✅      |
+| .gitignore Detection            | ✅      |
+| Dockerfile Detection            | ✅      |
+| GitHub Actions Detection        | ✅      |
+| Package.json Validation         | ✅      |
+| Environment Variable Validation | ✅      |
+| Deployment Scoring              | ✅      |
+| Recommendations Engine          | ✅      |
+
+---
+
+## 📋 Example Report
 
 ```json
 {
@@ -62,21 +130,68 @@ Recommendations Dashboard
   ],
   "recommendations": [
     "Add Dockerfile",
-    "No GitHub Actions workflow detected"
+    "No GitHub Actions workflow detected",
+    "Environment variable template missing"
   ]
 }
 ```
 
-## Future Enhancements
+---
 
-* Kubernetes Configuration Analysis
-* Health Endpoint Detection
-* Terraform Validation
-* Docker Compose Analysis
-* Cloud Deployment Recommendations
+## 🚀 Local Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/adidesai43453/deployguard.git
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd backend
+npm install
+node server.js
+```
 
 ---
 
-## Author
+## 🎯 Project Highlights
 
-Aditya Desai
+* Built a full-stack deployment readiness analysis platform
+* Implemented automated repository scanning and scoring
+* Developed a ZIP-based repository ingestion pipeline
+* Generated actionable deployment recommendations
+* Designed an interactive DevOps reporting dashboard
+* Deployed cloud-hosted frontend and backend services
+
+---
+
+## 🔮 Future Enhancements
+
+* Kubernetes Configuration Analysis
+* Docker Compose Validation
+* Health Endpoint Detection
+* Terraform Validation
+* Cloud Deployment Recommendations
+* AI-Powered Deployment Suggestions
+
+---
+
+## 👨‍💻 Author
+
+**Aditya Desai**
+
+GitHub: https://github.com/adidesai43453
+
+---
+
+### ⭐ If you found this project interesting, consider giving it a star.
